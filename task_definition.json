@@ -34,7 +34,7 @@
             "resourceRequirements": [
                 {
                     "type": "GPU",
-                    "value": "1"
+                    "value": "0"
                 }
             ],
             "systemControls": [],
@@ -45,7 +45,7 @@
     "cpu": "1024",
     "executionRoleArn": "arn:aws:iam::335741630127:role/ecsTaskExecutionRole",
     "family": "my-app-on-cloud",
-    "memory": "1024",
+    "memory": "3072",
     "networkMode": "awsvpc",
     "placementConstraints": [],
     "registeredAt": "2025-10-23T06:10:49.612Z",
