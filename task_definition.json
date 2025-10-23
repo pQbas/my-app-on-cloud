@@ -43,7 +43,6 @@
         }
     ],
     "cpu": "1024",
-    "enableFaultInjection": false,
     "executionRoleArn": "arn:aws:iam::335741630127:role/ecsTaskExecutionRole",
     "family": "my-app-on-cloud",
     "memory": "1024",
