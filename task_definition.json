@@ -36,7 +36,7 @@
             "volumesFrom": []
         }
     ],
-    "cpu": "1024",
+    "cpu": "2048",
     "executionRoleArn": "arn:aws:iam::335741630127:role/ecsTaskExecutionRole",
     "family": "my-app-on-cloud",
     "memory": "3072",
