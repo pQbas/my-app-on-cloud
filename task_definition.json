@@ -31,12 +31,6 @@
                     "protocol": "tcp"
                 }
             ],
-            "resourceRequirements": [
-                {
-                    "type": "GPU",
-                    "value": "0"
-                }
-            ],
             "systemControls": [],
             "ulimits": [],
             "volumesFrom": []
