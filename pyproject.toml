@@ -1,0 +1,11 @@
+[project]
+name = "my-app-on-cloud"
+version = "0.1.0"
+description = "A simple and generic API for basic operations"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastapi>=0.119.1",
+    "uvicorn>=0.33.0",
+]
