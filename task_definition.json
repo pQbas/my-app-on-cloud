@@ -1,15 +1,15 @@
 {
     "compatibilities": [
         "EC2",
+        "FARGATE",
         "MANAGED_INSTANCES"
     ],
     "containerDefinitions": [
         {
-            "cpu": 0,
+            "cpu": 2048,
             "environment": [],
-            "environmentFiles": [],
             "essential": true,
-            "image": "335741630127.dkr.ecr.us-east-2.amazonaws.com/my-app-on-cloud",
+            "image": "335741630127.dkr.ecr.us-east-2.amazonaws.com/my-app-on-cloud:373a04e383b90a5036b0a5d81d04134f83b177f1",
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -32,17 +32,16 @@
                 }
             ],
             "systemControls": [],
-            "ulimits": [],
             "volumesFrom": []
         }
     ],
     "cpu": "2048",
     "executionRoleArn": "arn:aws:iam::335741630127:role/ecsTaskExecutionRole",
     "family": "my-app-on-cloud",
-    "memory": "3072",
+    "memory": "4096",
     "networkMode": "awsvpc",
     "placementConstraints": [],
-    "registeredAt": "2025-10-23T06:10:49.612Z",
+    "registeredAt": "2025-10-24T02:48:14.610Z",
     "registeredBy": "arn:aws:iam::335741630127:root",
     "requiresAttributes": [
         {
@@ -58,6 +57,9 @@
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
         },
         {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
             "name": "ecs.capability.execution-role-ecr-pull"
         },
         {
@@ -71,15 +73,16 @@
         }
     ],
     "requiresCompatibilities": [
-        "EC2"
+        "FARGATE"
     ],
-    "revision": 1,
+    "revision": 7,
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
     "status": "ACTIVE",
-    "taskDefinitionArn": "arn:aws:ecs:us-east-2:335741630127:task-definition/my-app-on-cloud:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:335741630127:task-definition/my-app-on-cloud:7",
+    "taskRoleArn": "arn:aws:iam::335741630127:role/ecsTaskExecutionRole",
     "volumes": [],
     "tags": []
 }
